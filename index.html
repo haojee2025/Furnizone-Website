@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Furnizone</title>
+  <link rel="stylesheet" href="./src/css/styles.css" />
+</head>
+<body>
+
+  <!-- Glassmorphism Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <!-- Brand -->
+      <a href="/" class="brand" aria-label="Furnizone Industries Sdn Bhd">
+        <img class="brand-mark" src="./src/img/furnizone-logo.jpeg" alt="Furnizone logo" width="48" height="48" />
+        <span class="brand-text">
+          <span class="brand-title">Furnizone Industries Sdn Bhd</span>
+          <span class="brand-sub">200801036500 (0837840-W)</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="/" data-current="true">Home</a></li>
+          <li><a class="nav-link" href="/catalogue">Catalogue</a></li>
+          <li><a class="nav-link" href="/products">Products</a></li>
+          <li><a class="nav-link" href="/resources">Resources</a></li>
+          <li><a class="nav-link" href="/about">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop CTA (hidden on mobile by CSS) -->
+      <a class="cta" href="/contact" aria-label="Contact us">
+        Contact Us
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M5 12h13m0 0-5-5m5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+      <!-- Mobile Menu Trigger -->
+      <div class="hamburger">
+        <button id="menuBtn" aria-label="Open menu" aria-haspopup="menu" aria-expanded="false">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Backdrop for Drawer -->
+  <div class="backdrop" id="backdrop"></div>
+
+  <!-- Mobile Drawer (CTA lives here on mobile) -->
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-top">
+      <strong>Menu</strong>
+      <button id="closeBtn" aria-label="Close menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <ul role="menu" aria-label="Mobile">
+      <li><a href="/" role="menuitem">Home</a></li>
+      <li><a href="/catalogue" role="menuitem">Catalogue</a></li>
+      <li><a href="/products" role="menuitem">Products</a></li>
+      <li><a href="/resources" role="menuitem">Resources</a></li>
+      <li><a href="/about" role="menuitem">About</a></li>
+    </ul>
+
+    <a class="cta" href="/contact" aria-label="Contact us">
+      Contact Us
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M5 12h13m0 0-5-5m5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </aside>
+
+  <script src="./src/js/script.js"></script>
+</body>
+</html>
+
+
